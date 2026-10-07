@@ -452,7 +452,6 @@ html{scroll-padding-top:140px}
   .cols-3{grid-template-columns:1fr 1fr}
   .order-grid{grid-template-columns:1fr}
   .sticky{position:static}
-  .o-side{order:-1}
 }
 @media(max-width:700px){
   .m-sec{padding:26px 20px;border-radius:26px}
