@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deli Order — Tilton Market</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Order from the Tilton Market deli counter: sandwiches, hot case items, lunchmeat, cheese and homemade salads.">
+<link rel="icon" type="image/png" href="/images/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a href="/" class="brand" aria-label="Tilton Market home">
+      <img class="brand-logo" src="/images/logo.webp" alt="Tilton Market" width="520" height="208">
+      <span class="brand-text"><em>Your Family Supermarket</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/#specials">Specials</a>
+      <a href="/#deli" aria-current="page">Deli</a>
+      <a href="/#departments">Departments</a>
+      <a href="/catering-menu/">Catering</a>
+      <a href="/#story">Our Story</a>
+      <a href="/#visit">Visit</a>
+    </nav>
+    <div class="bar-right">
+      <span class="open-pill" id="openPill" hidden><i></i><span id="openText"></span></span>
+      <a class="btn btn-cream btn-sm call" href="tel:+16096415118">Call 609-641-5118</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero compact">
+  <div class="wrap reveal">
+    <p class="crumbs"><a href="/">Home</a> / Deli order</p>
+    <p class="eyebrow">The deli counter</p>
+    <h1>Order the deli online.</h1>
+    <p class="lede">Build your order, tell us who's picking it up, and we'll slice it fresh. Prefer to talk it through? Call the deli at <b>609-641-5118, ext. 1</b>.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#fff6e8"><path fill="currentColor" d="M0,64 C240,120 480,0 720,48 C960,96 1200,110 1440,40 L1440,120 L0,120Z"/></svg>
+</section>
+
+<section class="order-sec">
+  <div class="wrap">
+    <div class="demo-note" role="note"><b>Preview build.</b> This form isn't connected to the deli yet, so submissions are saved for review only. To place a real order, call <a href="tel:+16096415118">609-641-5118 ext. 1</a>.</div>
+
+    <a class="specials-peek" href="/#specials"><span class="sp-tag">Today's specials</span> Click here to see today's deli specials →</a>
+
+    <div class="order-grid">
+      <div class="order-main">
+        <ol class="steps" id="steps" aria-label="Progress">
+          <li class="on" data-s="1"><b>1</b> Build order</li>
+          <li data-s="2"><b>2</b> Your info</li>
+          <li data-s="3"><b>3</b> Review &amp; send</li>
+        </ol>
+
+        <!-- STEP 1 -->
+        <div class="o-card step on" id="step1">
+          <h2>What would you like to order?</h2>
+          <div class="field">
+            <label for="itemType">Item type <span class="req">*</span></label>
+            <select id="itemType">
+              <option value="">Select an item</option>
+              <option>Sandwich</option>
+              <option>Hot Case Item</option>
+              <option>Lunchmeat</option>
+              <option>Cheese</option>
+              <option>Salads</option>
+            </select>
+          </div>
+
+          <div class="group" id="g-sandwich" hidden>
+            <div class="field"><label for="sandwichDesc">Describe your sandwich <span class="req">*</span></label>
+              <textarea id="sandwichDesc" rows="3" placeholder="Meat or salad, bread (white, wheat, rye, roll), toppings…"></textarea></div>
+            <div class="field narrow"><label for="sandwichQty">How many?</label><input id="sandwichQty" type="number" min="1" max="50" value="1" inputmode="numeric"></div>
+          </div>
+
+          <div class="group" id="g-hot" hidden>
+            <div class="field"><label for="hotItem">Which hot case item? <span class="req">*</span></label>
+              <input id="hotItem" type="text" placeholder="e.g. meatballs, baked ziti, sausage &amp; peppers"></div>
+          </div>
+
+          <div class="group" id="g-lunch" hidden>
+            <div class="field"><label for="lmCat">Lunchmeat <span class="req">*</span></label>
+              <select id="lmCat">
+                <option value="">Select lunchmeat</option>
+                <option>Turkey</option><option>Beef &amp; Pork</option><option>Salami</option><option>Bologna</option><option>Chicken</option>
+              </select></div>
+            <div class="field" id="f-turkey" hidden><label for="lmTurkey">Turkey lunchmeat choices <span class="req">*</span></label>
+              <select id="lmTurkey">
+                <option value="">Select a turkey</option>
+                <option>Boar's Head Honey Maple TB</option>
+                <option>Dietz &amp; Watson Oven Browned TB</option>
+                <option>Boar's Head Ovn Gold TB</option>
+                <option>Dietz &amp; Watson Pepper TB</option>
+                <option>Dietz &amp; Watson Santa Fe TB</option>
+                <option>Boar's Head Smoked TB</option>
+                <option>Our Store Roasted TB</option>
+                <option>Boar's Head White Skinless TB</option>
+              </select></div>
+            <div class="field" id="f-beef" hidden><label for="lmBeef">Beef &amp; pork lunchmeat choices <span class="req">*</span></label>
+              <select id="lmBeef">
+                <option value="">Select a lunchmeat</option>
+                <option>Roast Beef - Top of Round</option>
+                <option>Roast Beef - Eye Round</option>
+                <option>Thumann's Corned Beef</option>
+                <option>Dietz &amp; Watson Dried Beef</option>
+                <option>Boar's Head Pastrami</option>
+                <option>Our Pork Roast</option>
+                <option>Boar's Head Prosciutto</option>
+              </select></div>
+            <div class="field" id="f-lmother" hidden><label for="lmOther">Brand or type <span class="opt">(optional)</span></label>
+              <input id="lmOther" type="text" placeholder="e.g. Boar's Head, Dietz &amp; Watson, your choice"></div>
+          </div>
+
+          <div class="group" id="g-cheese" hidden>
+            <div class="field"><label for="cheeseKind">Which cheese? <span class="req">*</span></label>
+              <input id="cheeseKind" type="text" placeholder="e.g. American, Swiss, Provolone"></div>
+          </div>
+
+          <div class="group" id="g-salad" hidden>
+            <div class="field"><label for="saladKind">Which salad? <span class="req">*</span></label>
+              <select id="saladKind">
+                <option value="">Select a salad</option>
+                <option>Ambrosia</option><option>Antipasti</option><option>Artichoke Salad</option><option>Baked Beans</option><option>Beet Salad</option><option>Broccoli Salad</option><option>Carrot Salad</option><option>Cheese Salad</option><option>Chicken Salad</option><option>Chopped Chicken Livers</option><option>Cole Slaw - Chopped</option><option>Cole Slaw - Shredded</option><option>Cucumber Salad</option><option>Egg Salad</option><option>Greek Olive Salad</option><option>Ham Spread</option><option>Health Salad</option><option>Hot Shots</option><option>Macaroni Salad</option><option>Mushroom/Artichoke Salad</option><option>Pasta Salad</option><option>Potato Salad - White</option><option>Potato Salad - Egg</option><option>Potato Salad - Red</option><option>Roasted Peppers</option><option>Seafood Pasta</option><option>Three Bean Salad</option><option>Tropical Fruit</option><option>Tuna Fish Salad - Light</option><option>Tuna Fish Salad - Regular</option><option>Tuna Macaroni</option><option>Turkey Salad</option>
+              </select></div>
+          </div>
+
+          <fieldset class="field weights" id="f-weight" hidden>
+            <legend>Weight <span class="req">*</span></legend>
+            <div class="pills">
+              <label><input type="radio" name="weight" value="1/8 lb."><span>1/8 lb.</span></label>
+              <label><input type="radio" name="weight" value="1/4 lb."><span>1/4 lb.</span></label>
+              <label><input type="radio" name="weight" value="1/2 lb."><span>1/2 lb.</span></label>
+              <label><input type="radio" name="weight" value="3/4 lb."><span>3/4 lb.</span></label>
+              <label><input type="radio" name="weight" value="1 lb."><span>1 lb.</span></label>
+              <label><input type="radio" name="weight" value="Other"><span>Other</span></label>
+            </div>
+            <div class="field" id="f-wother" hidden style="margin-top:14px"><label for="weightOther">Enter weight <span class="req">*</span></label>
+              <input id="weightOther" type="text" placeholder="e.g. 2 lbs."></div>
+          </fieldset>
+
+          <p class="err" id="err1" role="alert" hidden></p>
+          <div class="row-btns">
+            <button type="button" class="btn btn-red" id="addBtn" disabled>Add to my order</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <form class="o-card step" id="step2" novalidate>
+          <h2>Who's picking it up?</h2>
+          <div class="two">
+            <div class="field"><label for="fn">First name <span class="req">*</span></label><input id="fn" type="text" autocomplete="given-name" required></div>
+            <div class="field"><label for="ln">Last name <span class="req">*</span></label><input id="ln" type="text" autocomplete="family-name" required></div>
+          </div>
+          <div class="field"><label for="ph">Phone <span class="req">*</span></label><input id="ph" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone #" required></div>
+          <div class="field"><label for="notes">Anything else? <span class="opt">(optional)</span></label><textarea id="notes" rows="3" placeholder="Slicing preference, pickup time, allergies…"></textarea></div>
+          <p class="err" id="err2" role="alert" hidden></p>
+          <div class="row-btns">
+            <button type="button" class="btn btn-line" data-go="1">← Back</button>
+            <button type="submit" class="btn btn-red">Review order →</button>
+          </div>
+        </form>
+
+        <!-- STEP 3 -->
+        <div class="o-card step" id="step3">
+          <h2>Review &amp; send</h2>
+          <div class="review" id="review"></div>
+          <p class="err" id="err3" role="alert" hidden></p>
+          <div class="row-btns">
+            <button type="button" class="btn btn-line" data-go="2">← Back</button>
+            <button type="button" class="btn btn-red" id="sendBtn">Send my order</button>
+          </div>
+        </div>
+
+        <!-- DONE -->
+        <div class="o-card step done" id="stepDone">
+          <div class="check">✓</div>
+          <h2>Thanks, <span id="doneName"></span>!</h2>
+          <p>Your order was submitted. Need to change something? Call the deli at <a href="tel:+16096415118">609-641-5118 ext. 1</a>.</p>
+          <p class="fine-s">Preview build: this order was saved for review and wasn't sent to the deli.</p>
+          <div class="row-btns"><a class="btn btn-red" href="/">Back to home</a><button class="btn btn-line" id="againBtn" type="button">Start another order</button></div>
+        </div>
+      </div>
+
+      <aside class="o-side">
+        <div class="o-card sticky">
+          <h3>Your order</h3>
+          <ul class="cart" id="cart"></ul>
+          <p class="cart-empty" id="cartEmpty">Nothing yet. Pick an item type to get started.</p>
+          <button type="button" class="btn btn-mustard full" id="toStep2" disabled>Continue →</button>
+          <p class="fine-s">Open every day, 8am – 6pm.<br>Deli direct: 609-641-5118 ext. 1</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Netlify Forms detection (static copy of the submitted fields) -->
+<form name="deli-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="deli-order">
+  <input name="bot-field">
+  <input name="first_name"><input name="last_name"><input name="phone"><textarea name="notes"></textarea><textarea name="order"></textarea>
+</form>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="/" class="brand"><img class="brand-logo" src="/images/logo.webp" alt="Tilton Market" width="520" height="208"><span class="brand-text"><em>Your Family Supermarket</em></span></a>
+      <nav><a href="/#specials">Specials</a><a href="/#deli">Deli</a><a href="/#departments">Departments</a><a href="/catering-menu/">Catering</a><a href="/#story">Our Story</a><a href="https://tiltonmarket.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></nav>
+    </div>
+    <p class="fine">Phone numbers and SMS consent will never be shared with third parties, vendors, affiliates or any other outside entity for marketing purposes. Text messaging opt-in data and consent will not be shared with any third parties.</p>
+    <p class="fine">© <span id="yr"></span> Tilton Market · 1524 Tilton Road, Northfield, NJ 08215</p>
+  </div>
+</footer>
+
+<script src="/common.js"></script>
+<script src="/deli-order.js"></script>
+</body>
+</html>
