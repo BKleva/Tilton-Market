@@ -461,3 +461,10 @@ html{scroll-padding-top:140px}
   .o-card{padding:24px 20px}
   .page-hero{padding:48px 0 120px}
 }
+
+/* Shore Works credit */
+.foot-credit{text-align:center;margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,246,232,.12)}
+.foot-credit a{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:rgba(255,246,232,.6);text-decoration:none;transition:color .2s}
+.foot-credit a:hover{color:var(--cream)}
+.foot-credit img{height:16px;width:auto;opacity:.9}
+
