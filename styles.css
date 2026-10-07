@@ -286,3 +286,14 @@ address{font-style:normal;font-size:1.25rem;margin-bottom:1.4rem}
   .hero{min-height:680px}
   .special-card{align-self:end;margin-bottom:-10px}
 }
+
+/* logo */
+.brand-logo{height:50px;width:auto;border-radius:6px;box-shadow:0 4px 14px -6px rgba(0,0,0,.5)}
+.brand-text em{font-size:.85rem;opacity:.95;max-width:7.5em;line-height:1.15;letter-spacing:.02em}
+.site-footer .brand-logo{height:56px}
+@media(max-width:640px){.brand-logo{height:42px}}
+@media(min-width:1021px){
+  .hero{min-height:760px}
+  .hero-photo img{object-position:62% 85%}
+  .special-card{margin-bottom:-60px}
+}
