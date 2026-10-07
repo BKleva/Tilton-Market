@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilton Market — Your Family Supermarket in Northfield, NJ</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Tilton Market, Northfield NJ's family supermarket since 1955. Weekly deli specials, full-service meat counter, homemade salads and party catering.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%239b0a0a'/><text x='32' y='46' font-size='38' text-anchor='middle' font-family='Georgia' font-weight='700' fill='%23fff6e8'>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a href="#top" class="brand" aria-label="Tilton Market home">
+      <span class="brand-mark">T</span>
+      <span class="brand-text"><strong>Tilton Market</strong><em>Your Family Supermarket</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#specials">Specials</a>
+      <a href="#deli">Deli</a>
+      <a href="#departments">Departments</a>
+      <a href="#catering">Catering</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="bar-right">
+      <span class="open-pill" id="openPill" hidden><i></i><span id="openText"></span></span>
+      <a class="btn btn-cream btn-sm call" href="tel:+16096415118">Call 609-641-5118</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Northfield, NJ · Since 1955</p>
+      <h1>Fresh from our counter<br>to your <em>family table.</em></h1>
+      <p class="lede">A full-service neighborhood grocery with a legendary deli, a real butcher counter, homemade salads and party trays — all at Tilton &amp; Zion Roads.</p>
+      <div class="cta-row">
+        <a class="btn btn-mustard" href="#specials">See this week's specials</a>
+        <a class="btn btn-ghost" href="https://tiltonmarket.com/deli-order/" target="_blank" rel="noopener">Order from the deli ↗</a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>8am – 6pm</b><span>Open every day</span></li>
+        <li><b>Since 1955</b><span>Family supermarket</span></li>
+        <li><b>Ground on premises</b><span>Fresh beef</span></li>
+      </ul>
+    </div>
+
+    <aside class="special-card reveal" aria-live="polite">
+      <div class="sc-top"><span class="sc-tag">Deli special</span><span class="sc-day" id="heroDay"></span></div>
+      <div id="heroSpecial"></div>
+    </aside>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#f08a2c"><path fill="currentColor" d="M0,64 C240,120 480,0 720,48 C960,96 1200,110 1440,40 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- SPECIALS -->
+<section class="specials" id="specials">
+  <div class="wrap">
+    <div class="sec-head light reveal">
+      <p class="eyebrow">This week's deli specials</p>
+      <h2>Pick a day, see the deal.</h2>
+      <p>New specials every day at the deli counter. Tap a day to see it — or open the full flyer.</p>
+    </div>
+
+    <div class="week reveal" id="week" role="tablist" aria-label="Days of the week"></div>
+
+    <div class="board reveal" id="board" role="tabpanel"></div>
+
+    <div class="brands reveal">
+      <span>Always on the slicer:</span>
+      <b>Boar's Head</b><b>Dietz &amp; Watson</b><b>Thumann's</b><b>Our Store-Roasted Turkey</b><b>Our Pork Roast</b>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#fff6e8"><path fill="currentColor" d="M0,40 C260,110 520,90 760,40 C1000,-10 1220,20 1440,80 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- DELI COUNTER -->
+<section class="deli" id="deli">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow red">The deli counter</p>
+      <h2>Sliced to order. Stacked the Tilton way.</h2>
+      <p>Hot case, cold case, sandwiches and a case full of homemade salads. Call ext. <b>1</b> or order ahead online and we'll have it waiting.</p>
+    </div>
+
+    <div class="deli-grid">
+      <article class="deli-card photo reveal">
+        <img src="https://tiltonmarket.com/wp-content/uploads/2022/02/12sandwich.jpg" alt="Famous Original sandwich tray" loading="lazy">
+        <div class="dc-body"><span class="chip">Famous Original</span><h3>Roast beef, turkey, corned beef &amp; ham</h3><p>On white, wheat or rye. Our signature sandwich — by the sandwich or by the tray.</p></div>
+      </article>
+      <article class="deli-card photo reveal">
+        <img src="https://tiltonmarket.com/wp-content/uploads/2022/02/Hoagie-tray-294x300.jpg" alt="Hoagie tray" loading="lazy">
+        <div class="dc-body"><span class="chip">Hoagies</span><h3>Overstuffed subs</h3><p>Hoagie trays for game day and office lunches — 4 subs minimum.</p></div>
+      </article>
+      <article class="deli-card photo reveal">
+        <img src="https://tiltonmarket.com/wp-content/uploads/2022/02/Kaiser_Roll_Sand_Tray-300x262.jpeg" alt="Kaiser roll sandwich tray" loading="lazy">
+        <div class="dc-body"><span class="chip">Kaiser rolls</span><h3>Fresh-roll sandwiches</h3><p>Kaiser roll sandwich trays — 6 sandwiches minimum.</p></div>
+      </article>
+      <article class="deli-card photo reveal">
+        <img src="https://tiltonmarket.com/wp-content/uploads/2022/02/Wrap-Tray-298x300.jpg" alt="Wrap tray" loading="lazy">
+        <div class="dc-body"><span class="chip">Wraps</span><h3>Tomato, spinach or whole wheat</h3><p>A lighter option for lunches and parties — 4 wraps minimum.</p></div>
+      </article>
+    </div>
+
+    <div class="salads reveal">
+      <div class="salads-head">
+        <h3>Homemade deli salads</h3>
+        <p>Made in our kitchen, scooped by the pound.</p>
+      </div>
+      <ul class="chips">
+        <li>Chicken Salad</li><li>Tuna Salad</li><li>Egg Salad</li><li>Turkey Salad</li><li>Health Salad</li><li>Antipasti</li><li>Artichoke Salad</li><li>Beet Salad</li><li>Broccoli Salad</li><li>Carrot Salad</li><li>Cole Slaw</li><li>Cucumber Salad</li><li>Greek Olive Salad</li><li>Macaroni Salad</li><li>Pasta Salad</li><li>Potato Salad</li><li>Seafood Pasta</li><li>Three Bean Salad</li><li>Baked Beans</li><li>Ambrosia</li><li>Roasted Peppers</li><li>Hot Shots</li><li>Chopped Chicken Livers</li><li>Tropical Fruit</li><li>Rice Pudding</li><li>Bread Pudding</li>
+      </ul>
+    </div>
+
+    <div class="order-band reveal">
+      <div>
+        <h3>Skip the line. Order the deli online.</h3>
+        <p>Choose sandwiches, hot case items, lunchmeat, cheese or salads — pick your weight and we'll slice it fresh.</p>
+      </div>
+      <a class="btn btn-cream" href="https://tiltonmarket.com/deli-order/" target="_blank" rel="noopener">Start a deli order ↗</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#e6f0dc"><path fill="currentColor" d="M0,80 C220,10 460,20 720,70 C980,120 1200,90 1440,30 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- DEPARTMENTS -->
+<section class="departments" id="departments">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow green">Departments</p>
+      <h2>A whole market, one friendly stop.</h2>
+      <p>Dial 609-641-5118 and press the extension to reach a department directly.</p>
+    </div>
+
+    <div class="bento">
+      <article class="dept d-deli reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20h36"/><path d="M8 20c0-7 7-12 16-12s16 5 16 12"/><path d="M6 20c0 3 2 4 4 4 3 0 3-3 6-3s3 3 6 3 3-3 6-3 3 3 6 3 4-1 4-4"/><path d="M9 30h30l-2 10H11z"/></svg></div>
+        <span class="ext">Ext. 1</span>
+        <h3>Deli</h3>
+        <p>Boar's Head &amp; Dietz &amp; Watson cold cuts, store-roasted turkey, hot case favorites, cheeses and a daily special.</p>
+        <a href="#specials">See today's special →</a>
+      </article>
+
+      <article class="dept d-meat reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 28c-4-8 2-18 14-18 11 0 18 7 15 16-2 7-10 12-18 11-5-1-9-3-11-9z"/><circle cx="26" cy="22" r="4"/><path d="M8 40l6-6"/></svg></div>
+        <span class="ext">Ext. 2</span>
+        <h3>Meat Counter</h3>
+        <p>Filet mignon, strip, porterhouse, rib roasts and lamb. Ground beef is ground on premises. Custom cuts always welcome.</p>
+        <ul class="mini"><li>Filet &amp; strip</li><li>Rib roasts</li><li>Lamb racks</li><li>Ground in-store</li></ul>
+      </article>
+
+      <article class="dept d-cater reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 32h36"/><path d="M10 32a14 14 0 0 1 28 0"/><path d="M24 14v4"/><path d="M4 38h40"/></svg></div>
+        <h3>Catering</h3>
+        <p>Sandwich trays, appetizers, heat-n-serve sides and entrées for every size of gathering.</p>
+        <a href="#catering">See platters &amp; pricing →</a>
+      </article>
+
+      <article class="dept d-bake reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 28c0-9 8-16 18-16s18 7 18 16z"/><path d="M8 28l3 12h26l3-12"/><path d="M18 20l2 4M26 18l2 4M32 22l1 3"/></svg></div>
+        <h3>Pies &amp; Desserts</h3>
+        <p>Lattice apple, pecan, French silk, lemon meringue and Pellman cheesecake — 20+ pies for the holidays and any day.</p>
+      </article>
+
+      <article class="dept d-hot reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20h32v14a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6z"/><path d="M6 20h36"/><path d="M16 14c0-3 3-3 3-6M24 14c0-3 3-3 3-6M32 14c0-3 3-3 3-6"/></svg></div>
+        <h3>Heat n Serve</h3>
+        <p>Lasagna, baked ziti, meatloaf, stuffed chicken breast, mac &amp; cheese, scalloped potatoes — dinner done.</p>
+      </article>
+
+      <article class="dept d-grocery reveal">
+        <div class="ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10h6l5 22h20l4-16H14"/><circle cx="19" cy="39" r="2.5"/><circle cx="35" cy="39" r="2.5"/></svg></div>
+        <div><h3>Full-Service Grocery</h3>
+        <p>Your everyday staples, with the service of a store that knows your name. Manager on ext. 4.</p></div>
+      </article>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#1f4d2b"><path fill="currentColor" d="M0,50 C240,120 500,100 740,50 C980,0 1200,10 1440,70 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- CATERING -->
+<section class="catering" id="catering">
+  <div class="wrap">
+    <div class="sec-head light reveal">
+      <p class="eyebrow mustard">Party catering</p>
+      <h2>Feed the whole crowd.</h2>
+      <p>Graduations, game days, holidays and office lunches. Call the deli at ext. 1 to place your order.</p>
+    </div>
+
+    <div class="price-row">
+      <article class="price-card hero-tray reveal">
+        <span class="ribbon">Customer favorite</span>
+        <h3>Famous Original Sandwich Tray</h3>
+        <p class="sub">Roast beef, turkey breast, corned beef and/or boiled ham on white, wheat or rye.</p>
+        <div class="tiers">
+          <div><b>$80</b><span>8 sandwiches</span></div>
+          <div><b>$100</b><span>10 sandwiches</span></div>
+          <div><b>$120</b><span>12 sandwiches</span></div>
+        </div>
+      </article>
+
+      <article class="price-card reveal">
+        <h3>More trays</h3>
+        <ul class="plain">
+          <li><span>Hoagie trays</span><em>4 sub minimum</em></li>
+          <li><span>Kaiser roll trays</span><em>6 sandwich minimum</em></li>
+          <li><span>Wrap trays</span><em>4 wrap minimum</em></li>
+          <li><span>Lunchmeat &amp; cheese trays</span><em>from $15</em></li>
+        </ul>
+      </article>
+
+      <article class="price-card reveal">
+        <h3>Appetizers</h3>
+        <ul class="plain">
+          <li><span>Pepperoni &amp; cheese w/ crackers</span><em>$45</em></li>
+          <li><span>Veggie tray</span><em>$25 / $40</em></li>
+          <li><span>BBQ wings, mini meatballs</span><em>ask us</em></li>
+          <li><span>10" quiches · 20+ varieties</span><em>varies</em></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tabs reveal" id="cateringTabs">
+      <div class="tab-btns" role="tablist">
+        <button class="on" data-t="sides" role="tab">Heat n Serve Sides</button>
+        <button data-t="entrees" role="tab">Entrées</button>
+        <button data-t="hot" role="tab">Hot Sandwiches</button>
+        <button data-t="pies" role="tab">Pies &amp; Cheesecake</button>
+      </div>
+      <div class="tab-pane on" id="t-sides">
+        <ul class="chips on-dark"><li>Buttered Green Beans</li><li>Candied Yams &amp; Apples</li><li>German Potato Salad</li><li>Green Bean Casserole</li><li>Macaroni &amp; Cheese</li><li>Mashed Potatoes</li><li>Roasted Potatoes</li><li>Roasted Veggies w/ Garlic</li><li>Scalloped Potatoes</li><li>Swiss Baked Spinach</li><li>Twice Baked Sweet Potatoes</li></ul>
+        <p class="note">Small ≈ 1 lb (3–4 servings) · Medium ≈ 4.5 lbs (12–15) · Large ≈ 7 lbs (20–25)</p>
+      </div>
+      <div class="tab-pane" id="t-entrees">
+        <ul class="chips on-dark"><li>Roast Beef</li><li>Roast Pork</li><li>Boneless Turkey Breast</li><li>Fully Cooked Hams</li><li>Stuffed Chicken Breast</li><li>Homemade Meatloaf</li><li>Homemade Meatballs</li><li>Lasagna</li><li>Baked Ziti</li><li>Sausage, Peppers &amp; Onions</li><li>Kielbasa &amp; Sauerkraut</li></ul>
+        <p class="note">Homemade gravy $7.89 / quart · Ham slicing &amp; tying +40¢/lb</p>
+      </div>
+      <div class="tab-pane" id="t-hot">
+        <ul class="chips on-dark"><li>Chicken Filet</li><li>Chicken Parmesan</li><li>Meatball Subs</li><li>Italian Sausage w/ Peppers &amp; Onions</li></ul>
+      </div>
+      <div class="tab-pane" id="t-pies">
+        <ul class="chips on-dark"><li>Apple Lattice</li><li>Dutch Apple</li><li>Pecan</li><li>Pumpkin</li><li>Sweet Potato</li><li>Lemon Meringue</li><li>French Silk</li><li>Boston Cream</li><li>Coconut Custard</li><li>Blueberry Lattice</li><li>Peach Berry</li><li>Pellman Cheesecake</li></ul>
+      </div>
+    </div>
+
+    <div class="cater-cta reveal">
+      <a class="btn btn-mustard" href="tel:+16096415118">Call the deli · 609-641-5118 ext. 1</a>
+      <a class="btn btn-ghost" href="https://tiltonmarket.com/catering-menu/" target="_blank" rel="noopener">Full catering menu ↗</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#3a1210"><path fill="currentColor" d="M0,70 C240,10 480,20 720,70 C960,120 1200,100 1440,40 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="sec-head light reveal">
+      <p class="eyebrow mustard">Our story</p>
+      <h2>Your family supermarket, since 1955.</h2>
+      <p>For generations, Tilton &amp; Zion Roads has been where Northfield shops, snacks and celebrates. Same corner, same care.</p>
+    </div>
+  </div>
+  <div class="timeline reveal" tabindex="0" aria-label="Photo timeline of Tilton Market, scroll sideways">
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/1955.jpg" alt="Tilton Market in 1955" loading="lazy"><figcaption><b>1955</b>Tilton &amp; Zion Roads</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/1956.jpg" alt="Tilton Market in 1956" loading="lazy"><figcaption><b>1956</b>From the archive</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/1958.jpg" alt="Tilton Market in 1958" loading="lazy"><figcaption><b>1958</b>From the archive</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/1962.jpg" alt="Tilton Market in 1962" loading="lazy"><figcaption><b>1962</b>From the archive</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/Rich-Joe-2.jpg" alt="Rich Senese and Joe Mazzeo" loading="lazy"><figcaption><b>Rich &amp; Joe</b>Rich Senese &amp; Joe Mazzeo</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/1999.jpg" alt="Tilton Market in 1999" loading="lazy"><figcaption><b>1999</b>From the archive</figcaption></figure>
+    <figure><img src="https://tiltonmarket.com/wp-content/uploads/2022/02/2004.jpg" alt="Tilton Market in 2004" loading="lazy"><figcaption><b>2004</b>From the archive</figcaption></figure>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" style="color:#9b0a0a"><path fill="currentColor" d="M0,60 C260,120 520,90 780,50 C1020,10 1240,30 1440,80 L1440,120 L0,120Z"/></svg>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <p class="eyebrow mustard">Visit us</p>
+      <h2>Come say hi.</h2>
+      <address>
+        <b>1524 Tilton Road</b><br>Northfield, NJ 08215<br>
+        <span class="muted">at Tilton &amp; Zion Roads</span>
+      </address>
+      <div class="hours"><b>8:00 am – 6:00 pm</b><span>every day</span></div>
+      <div class="phone-block">
+        <a class="big-phone" href="tel:+16096415118">609-641-5118</a>
+        <ul class="ext-list">
+          <li><b>1</b> Deli</li><li><b>2</b> Meat</li><li><b>3</b> Store hours</li><li><b>4</b> Manager</li><li><b>0</b> First available</li>
+        </ul>
+      </div>
+      <p><a class="mail" href="mailto:Email@TiltonMarket.com">Email@TiltonMarket.com</a></p>
+      <div class="cta-row">
+        <a class="btn btn-mustard" href="https://www.google.com/maps/dir/?api=1&destination=1524+Tilton+Road+Northfield+NJ+08215" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map to Tilton Market" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=1524+Tilton+Road+Northfield+NJ+08215&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#top" class="brand"><span class="brand-mark">T</span><span class="brand-text"><strong>Tilton Market</strong><em>Your Family Supermarket</em></span></a>
+      <nav><a href="#specials">Specials</a><a href="#deli">Deli</a><a href="#departments">Departments</a><a href="#catering">Catering</a><a href="#story">Our Story</a><a href="https://tiltonmarket.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></nav>
+    </div>
+    <p class="fine">Phone numbers and SMS consent will never be shared with third parties, vendors, affiliates or any other outside entity for marketing purposes. Text messaging opt-in data and consent will not be shared with any third parties.</p>
+    <p class="fine">© <span id="yr"></span> Tilton Market · 1524 Tilton Road, Northfield, NJ 08215</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
